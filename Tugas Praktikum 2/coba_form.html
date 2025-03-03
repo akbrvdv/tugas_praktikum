@@ -1,0 +1,22 @@
+<html lang="en">
+<body>
+
+<form action="/action_page.php" method="post">
+</form>
+
+<p>Jika Anda mengklik tombol "Kirim", data formulir akan dikirim ke halaman bernama "/action_page.php".</p>
+
+<p>
+    1. Saat mengisi data dan tombol reset di-klik maka value form input akan kembali menjadi Budi dan Prawira karena telah menjadi default value.
+    <br><br>
+    2. Saat tombol kirim di-klik maka data yang telah diisi akan dikirim ke halaman /action_page.php, namun jika file action_page.php tidak ada, maka akan muncul pesan "Cannot get action_page.php".
+    <br><br>
+    3. Jika diberikan atribut target dan diisi _self akan menampilkan halaman yang sama seperti sebelumnya, namun jika _blank maka akan ditampilkan pada tab baru.
+    <br><br>
+    4. Saat menambahkan method GET, URL berubah menjadi:  
+       `http://127.0.0.1:5500/action_page.php?i_name=Budi& i_belakang=Prawira`  
+       Sedangkan jika method POST sama seperti sebelumnya, tetapi URL tidak berisi data dari form, dan pada payload terdapat form data yang berisi data dari form.
+</p>
+
+</body>
+</html>

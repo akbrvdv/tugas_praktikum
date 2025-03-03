@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe input</title>
+</head>
+<body>
+    <label for="username"> type "text" :</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd"> type "password" :</label><br>
+    <input type="password" id="pwd" name="pwd"><br>
+    <p>
+        Type "text" akan menampilkan text yang ditulis dengan apa adanya, sedangkan type "password" tidak akan menampilkan isi text yang ditulis.
+    </p>
+    <br>
+    <hr/>
+
+    <h3>Uji coba 2</h3>
+    <input type="radio" name="html" id="html" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" name="html" id="css" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" name="html" id="javascript" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+    <p>
+        Penggunaan elemen radio button dalam HTML, yang digunakan untuk memungkinkan pengguna memilih salah satu dari beberapa opsi yang tersedia. Setiap radio button dibuat menggunakan elemen "input" dengan tipe radio, dan masing-masing memiliki atribut id, name, serta value.
+    </p>
+    <br>
+
+    <hr/>
+    <h3>Uji coba 3</h3>
+    <input type="checkbox" name="bike" id="id1" value="Bike">
+    <label for="id1">I have a bike</label><br>
+    <input type="checkbox" name="car" id="id2" value="Car">
+    <label for="id2">I have a car</label><br>
+    <input type="checkbox" name="boat" id="id3" value="Boat">
+    <label for="id3">I have a boat</label>
+    <p>
+        Penggunaan elemen checkbox dalam HTML, yang memungkinkan pengguna memilih lebih dari satu opsi.
+        Setiap checkbox dibuat menggunakan elemen "input" dengan atribut type="checkbox", name, id, dan value. Checkbox memungkinkan pengguna memilih lebih dari satu opsi sekaligus.
+    </p>
+    <br>
+
+    <hr/>
+    <h3>Uji coba 4</h3>
+    <label for="favcolor">Pilih warna dengan type="color":</label>
+    <input type="color" id="favcolor" name="favcolor"><br>
+    <label for="b">Pilih tanggal dengan type="date"</label>
+    <input type="date" id="b" name="tanggal"><br>
+    <input type="button" onclick="alert('Hello World!')" value="Click me!">
+    <p>
+        Pertama, ada input warna (type="color") yang memungkinkan pengguna memilih warna melalui palet, dengan label yang terhubung untuk aksesibilitas. Kemudian, ada input tanggal (type="date") yang menampilkan kalender bawaan browser untuk pemilihan tanggal.Terakhir, terdapat tombol (type="button") yang, ketika diklik, akan menampilkan alert dengan pesan "Hello World!".
+    </p>
+    <br>
+
+    <hr/>
+
+    <h3>Uji coba 5</h3>
+<label for="birthdaytime">Input dengan type datetime-local:</label>
+<input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+
+<label for="bdaymonth">Input dengan type month:</label>
+<input type="month" id="bdaymonth" name="bdaymonth"><br>
+
+<label for="email">Enter your email:</label>
+<input type="email" id="email" name="email">
+
+<p>
+    type "datetime-local" akan menampilkan pilihan tanggal dan waktu yang sesuai dengan format tanggal dan waktu yang ditentukan oleh browser.<br><br>
+    type "month" akan menampilkan pilihan bulan dan tahun.<br><br>
+    type "email" dikhususkan untuk input email.
+</p>
+
+<br>
+<hr/>
+<h3>Uji coba 6</h3>
+<input 
+    type="image" 
+    src="icon.png" 
+    alt="Submit" 
+    width="48" 
+    height="48">
+    
+<label for="myfile">Pilih file:</label>
+<input type="file" id="myfile" name="myfile" />
+<input type="hidden" id="custId" name="custId" value="3487" />
+
+<p>
+    type "image" akan menampilkan gambar yang akan diinputkan.
+    <br><br>
+    type "file" akan menampilkan input file yang dapat dipilih dari directory lokal.
+</p>
+<hr>
+
+<h3>Uji coba 7</h3>
+<label for="quantity">Quantity (between 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5">
+<br><br>
+
+<label for="vol">Volume (between 0 and 50):</label>
+<input type="range" id="vol" name="vol" min="0" max="50">
+<br><br>
+
+<p>
+    Dengan memberikan nilai min menjadi -50 pada type "number", maka jika tombol min/kurang diklik maka akan berakhir pada nilai -50. Jika ditambah, akan maksimal pada 50 sesuai nilai max.
+    <br><br>
+    Jika pada type "range" saat nilai min diganti menjadi -50, tidak ada perubahan.
+</p>
+<hr>
+
+<h3>Uji coba 8</h3>
+<label for="homepage">Add your homepage:</label>
+<input type="url" id="homepage" name="homepage"><br><br>
+<label for="gsearch">Search Google:</label>
+<input type="search" id="gsearch" name="gsearch"><br><br>
+<label for="ph">Enter your phone number:</label>
+<input type="tel" id="ph" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+
+<p>
+    Type "url" akan menampilkan form input URL yang dapat diisi dengan alamat web.
+    <br><br>
+    Type "search" akan menampilkan form input pencarian Google, terdapat ikon silang (x) setelah memberikan input yang berfungsi untuk menghapus inputan.
+    <br><br>
+    Type "phone" akan menampilkan form input nomor telepon, terdapat pattern yang dapat diisi dengan berbagai format nomor telepon.
+</p>
+<hr />
+
+<h3>Uji coba 9</h3>
+<label for="appt">Select a time:</label>
+<input type="time" id="appt" name="appt" /><br /><br />
+<label for="week">Select a week:</label>
+<input type="week" id="week" name="week" /><br /><br />
+<p>
+    Type "time" akan menampilkan form input waktu, terdapat format 24 jam.
+    <br><br>
+    Type "week" akan menampilkan form input minggu, terdapat format 52 minggu.
+</p>
+</body>
+</html>
