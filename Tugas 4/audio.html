@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muhammad Akbar Fadilah">
+    <meta name="nim" content="244311051">
+    <title>Judul Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* hanya untuk demonstrasi, bisa dihapus */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* hanya untuk demonstrasi, bisa dihapus */
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Judul Website</h1>
+    </header>
+    <audio controls autoplay muted>
+        <source src="gambar/audio/suara.mp3" type="audio/mpeg">
+        Browser tidak mendukung pemutar audio.
+    </audio>
+    <audio controls autoplay muted>
+        <source src="gambar/audio/suara1.mp3" type="audio/mpeg">
+        Browser tidak mendukung pemutar audio.
+    </audio>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Judul Artikel</h2>
+            <p>Konten disini</p>
+            <p>Kode HTML ini membangun struktur dasar website dengan header, navigasi di sisi kiri, konten utama di tengah, dan footer di bagian bawah.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>244311051 @MuhammadAkbar</p>
+    </footer>
+</body>
+</html>

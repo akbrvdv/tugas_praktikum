@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muhammad Akbar Fadilah">
+    <meta name="nim" content="244311051">
+    <title>Judul Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* hanya untuk demonstrasi, bisa dihapus */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* hanya untuk demonstrasi, bisa dihapus */
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Judul Website</h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            
+            <h2>Judul Artikel</h2>
+            <svg width="500" height="300">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            
+                <rect x="120" y="30" width="80" height="80" style="fill:blue;stroke:black;stroke-width:3" />
+            
+                <rect x="230" y="30" rx="15" ry="15" width="80" height="80" style="fill:red;stroke:black;stroke-width:3;opacity:0.7" />
+            
+                <polygon points="150,150 100,250 200,250" style="fill:lime;stroke:black;stroke-width:3" />
+            </svg>
+            
+            <p>Kode HTML ini menampilkan empat bentuk geometris dengan variasi warna dan gaya. Lingkaran kuning memiliki garis tepi hijau, persegi biru memiliki garis tepi hitam, dan persegi merah memiliki sudut melengkung serta transparansi yang memberikan efek visual lebih menarik. Selain itu, segitiga hijau melengkapi desain dengan bentuk yang lebih dinamis.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>244311051 @MuhammadAkbar</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Pemandangan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 20%;
+            height: 100vh;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        article {
+            float: left;
+            width: 80%;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #000;
+            transition: transform 0.3s;
+        }
+        /* Efek hover */
+        .gallery img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            clear: both;
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+    <script>
+        function showAlert(imageName) {
+            alert("Anda mengklik gambar: " + imageName);
+        }
+        function changeBorder(element) {
+            element.style.border = "4px solid red";
+        }
+        function resetBorder(element) {
+            element.style.border = "2px solid black";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Gambar Pemandangan</h1>
+            <div class="gallery">
+                <img src="gambar/gambar.jpg" alt="Pemandangan 1">
+                <img src="gambar/gambar1.jpg" alt="Pemandangan 2">
+                <img src="gambar/gambar2.jpg" alt="Pemandangan 3">
+                <img src="gambar/gambar4.jpg" alt="Pemandangan 4">
+                <img src="gambar/gambar5.jpg" alt="Pemandangan 5">
+                <img src="gambar/gambar6.jpg" alt="Pemandangan 6">
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>244311051@MuhammadAkbar</p>
+    </footer>
+</body>
+</html>
