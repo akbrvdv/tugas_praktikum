@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo CSS!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: blue;
+            color: yellow;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sub-header {
+            color: red;
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .menu {
+            width: 200px;
+            border: 2px dashed gray;
+            padding: 10px;
+        }
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 5px 0;
+        }
+        .menu a:hover {
+            color: blue;
+        }
+        .menu a:last-child {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .content {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .footer {
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Halo CSS !<br>
+        <span class="sub-header">Ini adalah website CSS saya</span>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+            <a href="#">Menu 4</a>
+            <a href="#">Menu 5</a>
+            <a href="#">Menu 6</a>
+        </div>
+        <div class="content">
+            <img src="icon.png" alt="Logo Politeknik Negeri Madiun">
+            <h2>TRPL</h2>
+            <h3>Politeknik Negeri Madiun</h3>
+            <p style="color: red;">
+                Mewujudkan pendidikan tinggi vokasi dalam bidang Teknologi Informasi dan penerapannya yang berkualitas, inovatif, dan berdaya saing Nasional.
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        Muhammad Akbar Fadilah | 244311051 | TRPL-2B
+    </div>
+</body>
+</html>

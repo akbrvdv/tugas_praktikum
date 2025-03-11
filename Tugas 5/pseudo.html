@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo Selectors</title>
+    <style>
+        p {
+            display: none;
+            background-color: darkgray;
+            padding: 20px;
+        }
+
+        div:hover p { 
+            display: block; 
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    Letakkan kursor disini untuk melihat div elemen
+    <p>Saya adalah element p</p>
+</div>
+
+<br>
+
+<a href="#">Link ini berubah warna saat di hover</a>
+
+</body>
+</html>

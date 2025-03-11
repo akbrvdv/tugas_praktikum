@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        div p { 
+            color: red;
+        }
+        div > p {
+            background-color: yellow;
+        }
+        div + p {
+            background-color: darkgray;
+        }
+        div ~ p { 
+            color: cyan; 
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p>This is a paragraph.  It is a descendant of the div and a direct child, so it is red and yellow.</p>
+    <p>This is a paragraph.  It is a descendant of the div and a direct child, so it is red and yellow.</p>
+</div>
+
+<p>This is a paragraph. It follows the div but is not an immediate sibling, so it is only cyan.</p>
+<p>This is a paragraph.  It is a general sibling of the div so it will only be cyan.</p>
+
+<p>This is a paragraph. This paragraph is after all the other divs and Ps.</p>
+
+<hr>
+<div>This div only exists to cause confusion.</div>
+<p>This is a paragraph. This paragraph is an immediate sibling, so it is darkgray.</p>
+<p>This is a paragraph. This paragraph is a general sibling, so it is cyan.</p>
+
+</body>
+</html>
