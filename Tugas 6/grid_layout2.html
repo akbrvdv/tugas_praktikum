@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout2</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .grid-container.variant1 {
+            grid-template-columns: auto auto;
+        }
+        .grid-container.variant2 {
+            grid-template-columns: 70px 300px auto 40px;
+        }
+        .grid-container.variant3 {
+            grid-template-columns: 10px 500px 20px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Grid Layout Skenario 2</h2>
+
+    <h3>Default (auto auto auto auto)</h3>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+    <h3>Varian 1 (auto auto)</h3>
+    <div class="grid-container variant1">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+    <h3>Varian 2 (70px 300px auto 40px)</h3>
+    <div class="grid-container variant2">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+    <h3>Varian 3 (10px 500px 20px 10px)</h3>
+    <div class="grid-container variant3">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+</body>
+</html>
