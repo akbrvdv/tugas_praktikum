@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    .submenu {
+      display: none;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<ul>
+  <li class="menu">Menu 1
+    <ul class="submenu">
+      <li>Submenu 1A</li>
+      <li>Submenu 1B</li>
+    </ul>
+  </li>
+  <li class="menu">Menu 2
+    <ul class="submenu">
+      <li>Submenu 2A</li>
+    </ul>
+  </li>
+</ul>
+
+<script>
+  $(".menu").click(function() {
+    $(this).children(".submenu").slideToggle();
+  });
+</script>
+
+</body>
+</html>

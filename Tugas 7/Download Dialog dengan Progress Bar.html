@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Progress Bar</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<button id="start">Mulai Download</button>
+<div id="progressbar" style="width:300px;"></div>
+
+<script>
+  $(function() {
+    $("#progressbar").progressbar({
+      value: false
+    }).hide();
+
+    $("#start").click(function() {
+      $("#progressbar").show().progressbar("option", "value", 0);
+
+      let progress = 0;
+      const interval = setInterval(function() {
+        progress += 10;
+        $("#progressbar").progressbar("option", "value", progress);
+
+        if (progress >= 100) {
+          clearInterval(interval);
+        }
+      }, 300);
+    });
+  });
+</script>
+
+</body>
+</html>
